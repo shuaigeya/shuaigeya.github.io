@@ -24,15 +24,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="spring" />
+  <meta name="keywords" content="redis" />
 
 
-<link rel="canonical" href="http://example.com/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/">
+<link rel="canonical" href="http://example.com/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/">
 
 
 
   <title>
-Spring基础概念篇 - 框架篇 |
+redis基础篇 - 数据库 |
 Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 6.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,16 +60,16 @@ Yume Shoka = Hexo</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">Spring基础概念篇
+  <h1 itemprop="name headline">redis基础篇
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2022-06-28 15:40:21">
+  <span class="item" title="创建时间：2022-06-29 16:12:54">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-06-28T15:40:21+08:00">2022-06-28</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-06-29T16:12:54+08:00">2022-06-29</time>
   </span>
 </div>
 
@@ -102,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
           <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -133,12 +133,12 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
 <span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%A1%86%E6%9E%B6%E7%AF%87/" itemprop="item" rel="index" title="分类于 框架篇"><span itemprop="name">框架篇</span></a>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="item" rel="index" title="分类于 数据库"><span itemprop="name">数据库</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -153,23 +153,29 @@ Yume Shoka = Hexo</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="1什么是spring"><a class="markdownIt-Anchor" href="#1什么是spring">#</a> 1. 什么是 Spring</h2>
-<p>容器框架：可以管理所有的组件（类）</p>
-<h2 id="2ioc-和-aop"><a class="markdownIt-Anchor" href="#2ioc-和-aop">#</a> 2.IOC 和 AOP</h2>
-<p><strong>IOC</strong>：也叫控制反转，是一种设计思想，将原本程序中手动创建对象的控制权交给 Sping 框架来管理。IOC 容器是 Sping 用来实现 IOC 的载体，IOC 容器实际上就是个 MAP，MAP 中存放各种对象。IOC 容器就像是一个工厂，当我们需要创建一个对象时，只需要配置好配置文件、注解即可，完全不用考虑对象是如何被创建出来的。</p>
-<p><strong>AOP</strong>: 面向切面编程，将那些与业务无关，却为业务模块所共同调用的逻辑或泽恩封装起来，便于减少系统重复代码，降低耦合性，有利于未来的扩展和可维护性。</p>
-<h2 id="3springmvc执行流程"><a class="markdownIt-Anchor" href="#3springmvc执行流程">#</a> 3.springMVC 执行流程。</h2>
-<p>1. 用户发送请求，这个请求会先到 dispatcherServlet (中央控制器)。</p>
-<p>2. 中央控制器接受请求调用 handlerMappers（处理器映射器），并由此知道该请求由哪个 controller 处理 。</p>
-<p>3. 中央控制器调用 HandlerAdapter （处理器适配器），告诉中央控制器应该要去执行哪个 controller。</p>
-<p>4. 前端控制器调用 HandlerAdapter,HandlerAdapter 经过适配器调用具体的 controller。</p>
-<p>5.controller 执行完返回 modelAndView（视图和数据），并层层返回给中央控制器。</p>
-<p>6. 中央适配器把 modelAadView 交给 viewReslover (视图解析器)，然后返回真正的视图。</p>
-<p>7. 前端控制器将数据模型填充到视图中。</p>
-<p>8. 前端控制器将响应结果返回给用户。</p>
+    <p>redis 中文文档：<span class="exturl" data-url="aHR0cHM6Ly93d3cucmVkaXMubmV0LmNuL3R1dG9yaWFsLzM1MDIuaHRtbA==">请戳此</span></p>
+<h2 id="nosql-简介"><a class="markdownIt-Anchor" href="#nosql-简介">#</a> NoSql 简介</h2>
+<h3 id="什么是关系型数据库"><a class="markdownIt-Anchor" href="#什么是关系型数据库">#</a> 什么是关系型数据库</h3>
+<p>依赖关系模型而创建的数据库就是关系型数据库。关系模型就是 一对一，一对多，多对多这些模型。</p>
+<h3 id="关系型数据库遵循-acip原则"><a class="markdownIt-Anchor" href="#关系型数据库遵循-acip原则">#</a> 关系型数据库遵循 ACIP 原则</h3>
+<ol>
+<li>A (Atomicity) 原子性：原子不可再分。在一次事务操作中，所有的操作要么全部成功，要么全部失败。</li>
+<li>C (Consistency) 一致性：事务的运行不会改变数据库原有的一致性约束。在一次购物操作前后，a+b 的账户余额是不变的。</li>
+<li>I (Isolation) 独立性：一个事务的操作不会影响到另一个事务的执行。</li>
+<li>D (Durability) 持久性：事务操作一旦提交，就永远保存在数据库中。</li>
+</ol>
+<h2 id="redis-简介"><a class="markdownIt-Anchor" href="#redis-简介">#</a> Redis 简介</h2>
+<h3 id="什么是redis"><a class="markdownIt-Anchor" href="#什么是redis">#</a> 什么是 Redis?</h3>
+<p>Redis 是目前运用较广的一款关系型数据库，遵守 BSD 协议，是一个高性能的 key-value 数据库。<br>
+redis 的特点有：</p>
+<ol>
+<li>不仅仅支持 key-value 数据格式，还支持 list，set，zset，hash 等数据结构</li>
+<li>支持数据的持久化，可以把内存中的数据保存在磁盘中。重启后可以继续使用。</li>
+<li>支持数据备份。</li>
+</ol>
 
       <div class="tags">
-          <a href="/tags/spring/" rel="tag"><i class="ic i-tag"></i> spring</a>
+          <a href="/tags/redis/" rel="tag"><i class="ic i-tag"></i> redis</a>
       </div>
   </div>
 
@@ -181,7 +187,7 @@ Yume Shoka = Hexo</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-06-29 10:52:07" itemprop="dateModified" datetime="2022-06-29T10:52:07+08:00">2022-06-29</time>
+    <time title="修改时间：2022-06-29 17:12:19" itemprop="dateModified" datetime="2022-06-29T17:12:19+08:00">2022-06-29</time>
   </span>
 </div>
 
@@ -217,7 +223,7 @@ Yume Shoka = Hexo</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/" title="Spring基础概念篇">http://example.com/2022/06/28/Spring基础概念篇/</a>
+    <a href="http://example.com/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/" title="redis基础篇">http://example.com/2022/06/29/redis基础篇/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -236,22 +242,14 @@ Yume Shoka = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli9lfebj20zk0m84qp.jpg" title="Mysql事务篇">
+  <a href="/2022/06/29/myBatis-%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="myBatis 面试题">
   <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> 数据库</span>
-  <h3>Mysql事务篇</h3>
+  <span class="category"><i class="ic i-flag"></i> 面试题集</span>
+  <h3>myBatis 面试题</h3>
   </a>
 
     </div>
     <div class="item right">
-      
-
-  <a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="java基础篇面试题">
-  <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> 面试题集</span>
-  <h3>java基础篇面试题</h3>
-  </a>
-
     </div>
 </div>
 
@@ -268,11 +266,11 @@ Yume Shoka = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E4%BB%80%E4%B9%88%E6%98%AFspring"><span class="toc-number">1.</span> <span class="toc-text"> 1. 什么是 Spring</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2ioc-%E5%92%8C-aop"><span class="toc-number">2.</span> <span class="toc-text"> 2.IOC 和 AOP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3springmvc%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text"> 3.springMVC 执行流程。</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nosql-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> NoSql 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E9%81%B5%E5%BE%AA-acip%E5%8E%9F%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text"> 关系型数据库遵循 ACIP 原则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis-%E7%AE%80%E4%BB%8B"><span class="toc-number">2.</span> <span class="toc-text"> Redis 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFredis"><span class="toc-number">2.1.</span> <span class="toc-text"> 什么是 Redis?</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/" rel="bookmark" title="Spring基础概念篇">Spring基础概念篇</a></li>
+          <li><a href="/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/" rel="bookmark" title="Mysql事务篇">Mysql事务篇</a></li><li class="active"><a href="/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/" rel="bookmark" title="redis基础篇">redis基础篇</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -359,12 +357,10 @@ Yume Shoka = Hexo</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -389,17 +385,7 @@ Yume Shoka = Hexo</title>
 <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/" title="分类于 面试题集">面试题集</a>
 </div>
 
-    <span><a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" title="java基础篇面试题">java基础篇面试题</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
-</div>
-
-    <span><a href="/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/" title="Mysql事务篇">Mysql事务篇</a></span>
+    <span><a href="/2022/06/29/myBatis-%E9%9D%A2%E8%AF%95%E9%A2%98/" title="myBatis 面试题">myBatis 面试题</a></span>
   </li>
 
       
@@ -416,10 +402,30 @@ Yume Shoka = Hexo</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
+</div>
+
+    <span><a href="/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/" title="redis基础篇">redis基础篇</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
+</div>
+
+    <span><a href="/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/" title="Mysql事务篇">Mysql事务篇</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/" title="分类于 面试题集">面试题集</a>
 </div>
 
-    <span><a href="/2022/06/29/myBatis-%E9%9D%A2%E8%AF%95%E9%A2%98/" title="myBatis 面试题">myBatis 面试题</a></span>
+    <span><a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" title="java基础篇面试题">java基础篇面试题</a></span>
   </li>
 
       
@@ -430,16 +436,6 @@ Yume Shoka = Hexo</title>
 </div>
 
     <span><a href="/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/" title="Spring基础概念篇">Spring基础概念篇</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
-</div>
-
-    <span><a href="/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/" title="redis基础篇">redis基础篇</a></span>
   </li>
 
   </ul>
@@ -470,7 +466,7 @@ Yume Shoka = Hexo</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2022/06/28/Spring基础概念篇/',
+    path: '2022/06/29/redis基础篇/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"
