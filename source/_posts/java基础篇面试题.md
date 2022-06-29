@@ -1,7 +1,10 @@
 ---
-title: java基础篇
+title: java基础篇面试题
 date: 2022-06-28 16:09:11
 tags:
+- Java
+categories:
+- 面试题集
 ---
 
 ## 1.面向对象的特征

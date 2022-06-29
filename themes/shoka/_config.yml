@@ -23,7 +23,7 @@ favicon:
 # Dark Mode
 # By default, the page judges whether to turn on the dark mode according to the device settings or user selection
 # if `true`, the page will be displayed directly as Dark Mode, unless the user makes another choice
-darkmode: false
+darkmode: true
 
 # By default the page will automatically scroll to the last viewed position
 # if `false`, automatic positioning will be turned off
@@ -31,8 +31,8 @@ auto_scroll: true
 
 # Whether to show the loading cat
 loader:
-  start: true # When entering the page
-  switch: true # When switching to another page
+  start: false # When entering the page
+  switch: false # When switching to another page
 
 # click with Firework
 fireworks:
