@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo • Posts by &#34;hexo&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 29 Jun 2022 10:52:07 +0800</pubDate>
+        <lastBuildDate>Wed, 29 Jun 2022 10:52:07 +0800</lastBuildDate>
+        <category>spring</category>
+        <category>Java</category>
+        <category>Mysql</category>
+        <category>mybatis</category>
+        <category>redis</category>
+        <category>hexo</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
+            <title>shoka 食用手册</title>
+            <link>http://example.com/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/</link>
+            <category>hexo</category>
+            <pubDate>Wed, 29 Jun 2022 10:52:07 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;shoka-主题安装和配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#shoka-主题安装和配置&#34;&gt;#&lt;/a&gt; shoka 主题安装和配置&lt;/h2&gt;
+&lt;p&gt;shok 主题安装：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;请戳此&lt;/span&gt;&lt;br&gt;
+ shoka 依赖插件的安装和配置：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kZXBlbmRlbnRzLw==&#34;&gt;请戳此&lt;/span&gt;&lt;br&gt;
+ shoka 主题基本配置：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;请戳此&lt;/span&gt;&lt;br&gt;
+ shoka 界面显示相关配置：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5Lw==&#34;&gt;请戳此&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

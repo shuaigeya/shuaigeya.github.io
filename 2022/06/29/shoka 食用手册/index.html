@@ -34,7 +34,7 @@
   <title>
 shoka 食用手册 - 软件安装 |
 Yume Shoka = Hexo</title>
-<meta name="generator" content="Hexo 6.2.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
     <div class="cat">
@@ -102,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -158,38 +158,6 @@ Yume Shoka = Hexo</title>
  shoka 依赖插件的安装和配置：<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kZXBlbmRlbnRzLw==">请戳此</span><br>
  shoka 主题基本配置：<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv">请戳此</span><br>
  shoka 界面显示相关配置：<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5Lw==">请戳此</span></p>
-<h2 id="mybatis-动态标签"><a class="markdownIt-Anchor" href="#mybatis-动态标签">#</a> MyBatis 动态标签</h2>
-<blockquote>
-<p><strong>if、where、trim、set、foreach、collection、choose、sql、include、bing</strong></p>
-</blockquote>
-<h3 id="if-类似java中单分支-if-判断"><a class="markdownIt-Anchor" href="#if-类似java中单分支-if-判断">#</a> if : 类似 java 中单分支  if  判断</h3>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">*</span><br><span class="line">FROM</span><br><span class="line">	tbl_navigation a</span><br><span class="line">WHERE</span><br><span class="line"><span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;obj.navigationId!=null and obj.navigationId!=&#x27;&#x27;&quot;</span>&gt;</span></span><br><span class="line">    a.column_type = #&#123;obj.navigationId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;obj.id!=null and obj.id!=&#x27;&#x27;&quot;</span>&gt;</span></span><br><span class="line">    a.column_type = #&#123;obj.id&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="choose-when-otherwise"><a class="markdownIt-Anchor" href="#choose-when-otherwise">#</a> choose、when、otherwise</h3>
-<blockquote>
-<p><strong>类似 Java 的 if-else。</strong><br>
-1. 当 title 不为空， 选择 title。<br>
-2. 当 content 不为空，title 为空，选择 content 。<br>
-3. 当 content 和 title 都为空，选择 otherwise。<br>
-4. 当 content 和 title 都为不为空，选择 title。</p>
-</blockquote>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">select * from tbl_column</span><br><span class="line"><span class="tag">&lt;<span class="name">where</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">choose</span> &gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;obj.title != null&quot;</span>&gt;</span></span><br><span class="line">                 and title like #&#123;obj.title&#125;</span><br><span class="line">          <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;content != null&quot;</span>&gt;</span></span><br><span class="line">                 and content like #&#123;obj.content&#125;</span><br><span class="line">          <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">otherwise</span>&gt;</span></span><br><span class="line">                 and delete = 1</span><br><span class="line">          <span class="tag">&lt;/<span class="name">otherwise</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">choose</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">where</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="trim-where-set"><a class="markdownIt-Anchor" href="#trim-where-set">#</a> trim、where、set</h3>
-<blockquote>
-<p><strong>where</strong>: 替换 sql 语句中的 where。只有当子元素有任何返回的情况，才会拼接 where。当子元素 以 or 或 and 开头 会去除。<br>
-<strong>trim</strong>: 可以去除 or 和 and，在语句中拼接前缀或后缀。<br>
-<strong>set</strong>: 替换 sql 语句中的 set。动态在行首添加 set 删除子元素首行逗号。</p>
-</blockquote>
-<h3 id="foreach"><a class="markdownIt-Anchor" href="#foreach">#</a> foreach</h3>
-<blockquote>
-<p>类似 java 中的 foreach。<br>
-<strong>collection：collection</strong> 集合，可以为 List,Set,Map。<br>
-<strong>item</strong>： 每次遍历，index 对应的 对象。<br>
-<strong>index</strong>： 当前数组的下标<br>
-<strong> open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;</strong> ：循环开始前加 ‘(’，循环结束后加 ‘)’。循环过程中，每次循环结束后加，。</p>
-</blockquote>
-<p>以下为官网案例：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectPostIn&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;domain.blog.Post&quot;</span>&gt;</span></span><br><span class="line">  SELECT *</span><br><span class="line">  FROM POST P</span><br><span class="line">  WHERE ID in</span><br><span class="line">  <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">collection</span>=<span class="string">&quot;list&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;,&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span>&gt;</span></span><br><span class="line">        #&#123;item&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id=""><a class="markdownIt-Anchor" href="#">#</a> </h3>
 
       <div class="tags">
           <a href="/tags/hexo/" rel="tag"><i class="ic i-tag"></i> hexo</a>
@@ -204,7 +172,7 @@ Yume Shoka = Hexo</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-06-29 15:46:10" itemprop="dateModified" datetime="2022-06-29T15:46:10+08:00">2022-06-29</time>
+    <time title="修改时间：2022-06-30 13:58:09" itemprop="dateModified" datetime="2022-06-30T13:58:09+08:00">2022-06-30</time>
   </span>
 </div>
 
@@ -259,7 +227,7 @@ Yume Shoka = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclflwv2aj20zk0m84qp.jpg" title="java基础篇面试题">
+  <a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclg5ms2rj20zk0m8u0x.jpg" title="java基础篇面试题">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 面试题集</span>
   <h3>java基础篇面试题</h3>
@@ -269,7 +237,7 @@ Yume Shoka = Hexo</title>
     <div class="item right">
       
 
-  <a href="/2022/06/29/myBatis-%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="myBatis 面试题">
+  <a href="/2022/06/29/myBatis-%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewkhf1zj20zk0m81kx.jpg" title="myBatis 面试题">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 面试题集</span>
   <h3>myBatis 面试题</h3>
@@ -291,7 +259,7 @@ Yume Shoka = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#shoka-%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> shoka 主题安装和配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mybatis-%E5%8A%A8%E6%80%81%E6%A0%87%E7%AD%BE"><span class="toc-number">2.</span> <span class="toc-text"> MyBatis 动态标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#if-%E7%B1%BB%E4%BC%BCjava%E4%B8%AD%E5%8D%95%E5%88%86%E6%94%AF-if-%E5%88%A4%E6%96%AD"><span class="toc-number">2.1.</span> <span class="toc-text"> if : 类似 java 中单分支  if  判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#choose-when-otherwise"><span class="toc-number">2.2.</span> <span class="toc-text"> choose、when、otherwise</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim-where-set"><span class="toc-number">2.3.</span> <span class="toc-text"> trim、where、set</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#foreach"><span class="toc-number">2.4.</span> <span class="toc-text"> foreach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.5.</span> <span class="toc-text"> </span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#shoka-%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> shoka 主题安装和配置</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -412,7 +380,7 @@ Yume Shoka = Hexo</title>
 <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/" title="分类于 面试题集">面试题集</a>
 </div>
 
-    <span><a href="/2022/06/29/myBatis-%E9%9D%A2%E8%AF%95%E9%A2%98/" title="myBatis 面试题">myBatis 面试题</a></span>
+    <span><a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" title="java基础篇面试题">java基础篇面试题</a></span>
   </li>
 
       
@@ -429,10 +397,20 @@ Yume Shoka = Hexo</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
+<a href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="分类于 软件安装">软件安装</a>
 </div>
 
-    <span><a href="/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/" title="redis基础篇">redis基础篇</a></span>
+    <span><a href="/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/" title="shoka 食用手册">shoka 食用手册</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/" title="分类于 面试题集">面试题集</a>
+</div>
+
+    <span><a href="/2022/06/29/myBatis-%E9%9D%A2%E8%AF%95%E9%A2%98/" title="myBatis 面试题">myBatis 面试题</a></span>
   </li>
 
       
@@ -449,20 +427,10 @@ Yume Shoka = Hexo</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/" title="分类于 面试题集">面试题集</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
 </div>
 
-    <span><a href="/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/" title="java基础篇面试题">java基础篇面试题</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="分类于 软件安装">软件安装</a>
-</div>
-
-    <span><a href="/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/" title="shoka 食用手册">shoka 食用手册</a></span>
+    <span><a href="/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/" title="redis基础篇">redis基础篇</a></span>
   </li>
 
   </ul>
@@ -525,5 +493,5 @@ Yume Shoka = Hexo</title>
 
 
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Hexo • Posts by &#34;数据库&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2022-06-29T08:12:54.000Z</updated>
+    <category term="spring" />
+    <category term="Java" />
+    <category term="Mysql" />
+    <category term="mybatis" />
+    <category term="redis" />
+    <category term="hexo" />
+    <entry>
+        <id>http://example.com/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/</id>
+        <title>redis基础篇</title>
+        <link rel="alternate" href="http://example.com/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
+        <content type="html">&lt;p&gt;redis 中文文档：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucmVkaXMubmV0LmNuL3R1dG9yaWFsLzM1MDIuaHRtbA==&#34;&gt;请戳此&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;nosql-简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nosql-简介&#34;&gt;#&lt;/a&gt; NoSql 简介&lt;/h2&gt;
+&lt;h3 id=&#34;什么是关系型数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是关系型数据库&#34;&gt;#&lt;/a&gt; 什么是关系型数据库&lt;/h3&gt;
+&lt;p&gt;依赖关系模型而创建的数据库就是关系型数据库。关系模型就是 一对一，一对多，多对多这些模型。&lt;/p&gt;
+&lt;h3 id=&#34;关系型数据库遵循-acip原则&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关系型数据库遵循-acip原则&#34;&gt;#&lt;/a&gt; 关系型数据库遵循 ACIP 原则&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;A (Atomicity) 原子性：原子不可再分。在一次事务操作中，所有的操作要么全部成功，要么全部失败。&lt;/li&gt;
+&lt;li&gt;C (Consistency) 一致性：事务的运行不会改变数据库原有的一致性约束。在一次购物操作前后，a+b 的账户余额是不变的。&lt;/li&gt;
+&lt;li&gt;I (Isolation) 独立性：一个事务的操作不会影响到另一个事务的执行。&lt;/li&gt;
+&lt;li&gt;D (Durability) 持久性：事务操作一旦提交，就永远保存在数据库中。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;redis-简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#redis-简介&#34;&gt;#&lt;/a&gt; Redis 简介&lt;/h2&gt;
+&lt;h3 id=&#34;什么是redis&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是redis&#34;&gt;#&lt;/a&gt; 什么是 Redis?&lt;/h3&gt;
+&lt;p&gt;Redis 是目前运用较广的一款关系型数据库，遵守 BSD 协议，是一个高性能的 key-value 数据库。&lt;br&gt;
+redis 的特点有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不仅仅支持 key-value 数据格式，还支持 list，set，zset，hash 等数据结构&lt;/li&gt;
+&lt;li&gt;支持数据的持久化，可以把内存中的数据保存在磁盘中。重启后可以继续使用。&lt;/li&gt;
+&lt;li&gt;支持数据备份。&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="redis" />
+        <updated>2022-06-29T08:12:54.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/</id>
+        <title>Mysql事务篇</title>
+        <link rel="alternate" href="http://example.com/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/"/>
+        <content type="html"></content>
+        <category term="Mysql" />
+        <updated>2022-06-28T06:41:16.000Z</updated>
+    </entry>
+</feed>

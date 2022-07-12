@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Hexo • All posts by \"软件安装\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/",
+            "url": "http://example.com/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/",
+            "title": "shoka 食用手册",
+            "date_published": "2022-06-29T02:52:07.047Z",
+            "content_html": "<h2 id=\"shoka-主题安装和配置\"><a class=\"markdownIt-Anchor\" href=\"#shoka-主题安装和配置\">#</a> shoka 主题安装和配置</h2>\n<p>shok 主题安装：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=\">请戳此</span><br>\n shoka 依赖插件的安装和配置：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kZXBlbmRlbnRzLw==\">请戳此</span><br>\n shoka 主题基本配置：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv\">请戳此</span><br>\n shoka 界面显示相关配置：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5Lw==\">请戳此</span></p>\n",
+            "tags": [
+                "hexo"
+            ]
+        }
+    ]
+}

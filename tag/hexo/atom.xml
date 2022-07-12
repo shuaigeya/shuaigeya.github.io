@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Hexo • Posts by &#34;hexo&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2022-06-29T02:52:07.047Z</updated>
+    <category term="spring" />
+    <category term="Java" />
+    <category term="Mysql" />
+    <category term="mybatis" />
+    <category term="redis" />
+    <category term="hexo" />
+    <entry>
+        <id>http://example.com/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/</id>
+        <title>shoka 食用手册</title>
+        <link rel="alternate" href="http://example.com/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+        <content type="html">&lt;h2 id=&#34;shoka-主题安装和配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#shoka-主题安装和配置&#34;&gt;#&lt;/a&gt; shoka 主题安装和配置&lt;/h2&gt;
+&lt;p&gt;shok 主题安装：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;请戳此&lt;/span&gt;&lt;br&gt;
+ shoka 依赖插件的安装和配置：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kZXBlbmRlbnRzLw==&#34;&gt;请戳此&lt;/span&gt;&lt;br&gt;
+ shoka 主题基本配置：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;请戳此&lt;/span&gt;&lt;br&gt;
+ shoka 界面显示相关配置：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5Lw==&#34;&gt;请戳此&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="hexo" />
+        <updated>2022-06-29T02:52:07.047Z</updated>
+    </entry>
+</feed>

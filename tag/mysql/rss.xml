@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo • Posts by &#34;mysql&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 28 Jun 2022 14:41:16 +0800</pubDate>
+        <lastBuildDate>Tue, 28 Jun 2022 14:41:16 +0800</lastBuildDate>
+        <category>spring</category>
+        <category>Java</category>
+        <category>Mysql</category>
+        <category>mybatis</category>
+        <category>redis</category>
+        <category>hexo</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/</guid>
+            <title>Mysql事务篇</title>
+            <link>http://example.com/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/</link>
+            <category>Mysql</category>
+            <pubDate>Tue, 28 Jun 2022 14:41:16 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+    </channel>
+</rss>

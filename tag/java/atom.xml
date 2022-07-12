@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Hexo • Posts by &#34;java&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2022-06-28T08:09:11.000Z</updated>
+    <category term="spring" />
+    <category term="Java" />
+    <category term="Mysql" />
+    <category term="mybatis" />
+    <category term="redis" />
+    <category term="hexo" />
+    <entry>
+        <id>http://example.com/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+        <title>java基础篇面试题</title>
+        <link rel="alternate" href="http://example.com/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+        <content type="html">&lt;h2 id=&#34;1面向对象的特征&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1面向对象的特征&#34;&gt;#&lt;/a&gt; 1. 面向对象的特征&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;继承，封装，多态。&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;封装&lt;/strong&gt;：将对象的实现细节隐藏起来，然后通过公共方法暴露出该对象的功能。&lt;br&gt;
+&lt;strong&gt;继承&lt;/strong&gt;：实现软件复用。子类继承父类后可以直接或间接地使用父类的成员。&lt;br&gt;
+&lt;strong&gt;多态&lt;/strong&gt;：同一个行为具有不同的表现形式。&lt;/p&gt;
+&lt;h2 id=&#34;2java中覆盖和重载的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2java中覆盖和重载的区别&#34;&gt;#&lt;/a&gt; 2.JAVA 中覆盖和重载的区别&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;覆盖&lt;/strong&gt;：子类对父类方法的一种重写。返回值，方法名，参数列表必须相同。访问权限大于等于父类。抛出的异常要小于父类&lt;br&gt;
+&lt;strong&gt;重载&lt;/strong&gt;：在一个类中可以有多个重名的方法，根据 参数个数不同，参数类型不同，参数顺序不同  而构成重载。&lt;/p&gt;
+&lt;h2 id=&#34;3抽象类和接口的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3抽象类和接口的区别&#34;&gt;#&lt;/a&gt; 3. 抽象类和接口的区别&lt;/h2&gt;
+&lt;p&gt;1 .  抽象类可以没有抽象方法，但接口中的方法必须是抽象的。&lt;br&gt;
+2 . 抽象类只能被一个类继承，而接口可以继承多个父接口。&lt;br&gt;
+3 . 抽象类可以有普通成员变量，但 接口中的变量必须被初始化，接口中只有常量没有变量。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/47fb42cf20bd4883a3e1222f2bf6eae8.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;怎么选择接口和抽象类：如果要创建一个不带任何方法和成员变量的基类则选择接口，否则选择抽象类。&lt;/p&gt;
+&lt;h2 id=&#34;4java中常用的包&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4java中常用的包&#34;&gt;#&lt;/a&gt; 4.Java 中常用的包&lt;/h2&gt;
+&lt;p&gt;Java.lang  java.util  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmEuaW8=&#34;&gt;java.io&lt;/span&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmEuaW8=&#34;&gt;java.io&lt;/span&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmEubmV0&#34;&gt;java.net&lt;/span&gt;  java.sql&lt;/p&gt;
+&lt;h2 id=&#34;5java-是值传递还是引用传递&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5java-是值传递还是引用传递&#34;&gt;#&lt;/a&gt; 5.Java 是值传递还是引用传递？&lt;/h2&gt;
+&lt;p&gt;Java 是值传递的，当我们调用需要传参的函数时，传递过去的参数是它的副本而不是它本身&lt;br&gt;
+&lt;img data-src=&#34;https://img-blog.csdnimg.cn/b9f8506f3bcd4c168d64ef20c602da87.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6static-关键字的含义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6static-关键字的含义&#34;&gt;#&lt;/a&gt; 6.static 关键字的含义？&lt;/h2&gt;
+&lt;p&gt;被 static 修饰的成员变量或方法可以直接通过类名调用。静态块在编译时被调用。&lt;/p&gt;
+&lt;h2 id=&#34;7i和i的不同之处&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7i和i的不同之处&#34;&gt;#&lt;/a&gt; 7.i&lt;ins&gt; 和&lt;/ins&gt; i 的不同之处？&lt;/h2&gt;
+&lt;p&gt;两者在运算之前都会把变量值 + 1.&lt;br&gt;
+ 后置 ++ 会将变量赋值给一个临时变量，接下来对临时变量 + 1，然后用临时变量进行运算。&lt;/p&gt;
+&lt;h2 id=&#34;8truefalse-与-null是关键字吗&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8truefalse-与-null是关键字吗&#34;&gt;#&lt;/a&gt; 8.true，false 与 null 是关键字吗？&lt;/h2&gt;
+&lt;p&gt;true false 是布尔类型的字面常量，null 是引用类型的字面常量。&lt;/p&gt;
+&lt;h2 id=&#34;9java内存分布&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9java内存分布&#34;&gt;#&lt;/a&gt; 9.Java 内存分布&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/66b3b7ba39a94249957f043224b6bbd2.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
+&lt;strong&gt;栈&lt;/strong&gt;：一般存基础数据类型的值和对象以及基础数据类型的引用&lt;br&gt;
+&lt;strong&gt;堆&lt;/strong&gt;：存储创建好的对象和数组，jvm 只有一个堆，被所有的线程共享&lt;br&gt;
+&lt;strong&gt;方法区&lt;/strong&gt;：jvm 只有一个方法区，被所有线程共享。用于存储常量和存储类。&lt;/p&gt;
+&lt;h2 id=&#34;10java反射的实现过程和作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10java反射的实现过程和作用&#34;&gt;#&lt;/a&gt; 10.Java 反射的实现过程和作用&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;实现过程&lt;/strong&gt;：Java 语言编译完之后会生成一个.class 文件，反射就是通过字节码找到一个类和 类中的方法和属性等。&lt;br&gt;
+&lt;strong&gt;作用&lt;/strong&gt;：反射机制就是指程序运行过程中可以获取自身的信息。在 Java 中 只要知道类的名字就可以通过反射机制找到类的所有信息。&lt;/p&gt;
+&lt;h2 id=&#34;11请问error和exception有什么区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11请问error和exception有什么区别&#34;&gt;#&lt;/a&gt; 11. 请问 error 和 exception 有什么区别？&lt;/h2&gt;
+&lt;p&gt;error 表示恢复不是不可能但十分困难的一种严重问题，例如，内存溢出。&lt;br&gt;
+exception 表示一种设计或实现问题。表示，如果程序正常运行，就从不会发生的情况。&lt;/p&gt;
+&lt;h2 id=&#34;12ajax中get-和-post的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12ajax中get-和-post的区别&#34;&gt;#&lt;/a&gt; 12.AJAX 中 get 和 post 的区别。&lt;/h2&gt;
+&lt;p&gt;get 传输 把数据添加到 url 中发送。get 传输简单数据，数据大小在 1kb 以下。get 传输的数据会被浏览器缓存下来。&lt;br&gt;
+post 传输 把各表单数据及元素作为 HTML 的消息实体内容传递给 web 服务器。post 没有长度限制。&lt;/p&gt;
+</content>
+        <category term="Java" />
+        <updated>2022-06-28T08:09:11.000Z</updated>
+    </entry>
+</feed>

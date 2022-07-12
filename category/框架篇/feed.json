@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Hexo • All posts by \"框架篇\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/",
+            "url": "http://example.com/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/",
+            "title": "Spring基础概念篇",
+            "date_published": "2022-06-28T07:40:21.000Z",
+            "content_html": "<h2 id=\"1什么是spring\"><a class=\"markdownIt-Anchor\" href=\"#1什么是spring\">#</a> 1. 什么是 Spring</h2>\n<p>容器框架：可以管理所有的组件（类）</p>\n<h2 id=\"2ioc-和-aop\"><a class=\"markdownIt-Anchor\" href=\"#2ioc-和-aop\">#</a> 2.IOC 和 AOP</h2>\n<p><strong>IOC</strong>：也叫控制反转，是一种设计思想，将原本程序中手动创建对象的控制权交给 Sping 框架来管理。IOC 容器是 Sping 用来实现 IOC 的载体，IOC 容器实际上就是个 MAP，MAP 中存放各种对象。IOC 容器就像是一个工厂，当我们需要创建一个对象时，只需要配置好配置文件、注解即可，完全不用考虑对象是如何被创建出来的。</p>\n<p><strong>AOP</strong>: 面向切面编程，将那些与业务无关，却为业务模块所共同调用的逻辑或泽恩封装起来，便于减少系统重复代码，降低耦合性，有利于未来的扩展和可维护性。</p>\n<h2 id=\"3springmvc执行流程\"><a class=\"markdownIt-Anchor\" href=\"#3springmvc执行流程\">#</a> 3.springMVC 执行流程。</h2>\n<p>1. 用户发送请求，这个请求会先到 dispatcherServlet (中央控制器)。</p>\n<p>2. 中央控制器接受请求调用 handlerMappers（处理器映射器），并由此知道该请求由哪个 controller 处理 。</p>\n<p>3. 中央控制器调用 HandlerAdapter （处理器适配器），告诉中央控制器应该要去执行哪个 controller。</p>\n<p>4. 前端控制器调用 HandlerAdapter,HandlerAdapter 经过适配器调用具体的 controller。</p>\n<p>5.controller 执行完返回 modelAndView（视图和数据），并层层返回给中央控制器。</p>\n<p>6. 中央适配器把 modelAadView 交给 viewReslover (视图解析器)，然后返回真正的视图。</p>\n<p>7. 前端控制器将数据模型填充到视图中。</p>\n<p>8. 前端控制器将响应结果返回给用户。</p>\n",
+            "tags": [
+                "spring"
+            ]
+        }
+    ]
+}
