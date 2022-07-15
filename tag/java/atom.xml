@@ -4,12 +4,12 @@
     <title>Hexo • Posts by &#34;java&#34; tag</title>
     <link href="http://example.com" />
     <updated>2022-07-15T05:06:11.000Z</updated>
-    <category term="spring" />
     <category term="Mysql" />
+    <category term="spring" />
     <category term="Java" />
     <category term="redis" />
-    <category term="mybatis" />
     <category term="hexo" />
+    <category term="mybatis" />
     <entry>
         <id>http://example.com/2022/07/15/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
         <title>java基础篇面试题</title>
@@ -41,7 +41,7 @@
 &lt;ol&gt;
 &lt;li&gt;两者在运算之前都会把变量值 + 1。&lt;/li&gt;
 &lt;li&gt;后置 ++ 会将变量赋值给一个临时变量，接下来对临时变量 + 1，然后用临时变量进行运算。&lt;/li&gt;
-&lt;li&gt;b = &lt;ins&gt;a, 先自增，再赋值，b 值为 a 自增后的值。b = a&lt;/ins&gt; , 先赋值，再自增，b 值为 a 自增前的值。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;b = ++a&lt;/strong&gt;  , 先自增，再赋值，b 值为 a 自增后的值。&lt;strong&gt;b = a++&lt;/strong&gt;  , 先赋值，再自增，b 值为 a 自增前的值。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;string-stringbuffer-stringbuilder-的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#string-stringbuffer-stringbuilder-的区别&#34;&gt;#&lt;/a&gt; String , StringBuffer ,StringBuilder 的区别。&lt;/h3&gt;
 &lt;ul&gt;

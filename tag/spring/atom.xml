@@ -4,12 +4,12 @@
     <title>Hexo • Posts by &#34;spring&#34; tag</title>
     <link href="http://example.com" />
     <updated>2022-06-28T07:40:21.000Z</updated>
-    <category term="spring" />
     <category term="Mysql" />
+    <category term="spring" />
     <category term="Java" />
     <category term="redis" />
-    <category term="mybatis" />
     <category term="hexo" />
+    <category term="mybatis" />
     <entry>
         <id>http://example.com/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/</id>
         <title>Spring基础概念篇</title>

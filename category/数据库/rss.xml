@@ -7,12 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Wed, 29 Jun 2022 16:12:54 +0800</pubDate>
         <lastBuildDate>Wed, 29 Jun 2022 16:12:54 +0800</lastBuildDate>
-        <category>spring</category>
         <category>Mysql</category>
+        <category>spring</category>
         <category>Java</category>
         <category>redis</category>
-        <category>mybatis</category>
         <category>hexo</category>
+        <category>mybatis</category>
         <item>
             <guid isPermalink="true">http://example.com/2022/06/29/redis%E5%9F%BA%E7%A1%80%E7%AF%87/</guid>
             <title>redis基础篇</title>

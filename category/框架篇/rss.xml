@@ -7,12 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Tue, 28 Jun 2022 15:40:21 +0800</pubDate>
         <lastBuildDate>Tue, 28 Jun 2022 15:40:21 +0800</lastBuildDate>
-        <category>spring</category>
         <category>Mysql</category>
+        <category>spring</category>
         <category>Java</category>
         <category>redis</category>
-        <category>mybatis</category>
         <category>hexo</category>
+        <category>mybatis</category>
         <item>
             <guid isPermalink="true">http://example.com/2022/06/28/Spring%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87/</guid>
             <title>Spring基础概念篇</title>
