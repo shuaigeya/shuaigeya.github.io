@@ -5,10 +5,10 @@
     <link href="http://example.com" />
     <updated>2022-06-28T06:41:16.000Z</updated>
     <category term="spring" />
-    <category term="Java" />
     <category term="Mysql" />
-    <category term="mybatis" />
+    <category term="Java" />
     <category term="redis" />
+    <category term="mybatis" />
     <category term="hexo" />
     <entry>
         <id>http://example.com/2022/06/28/Mysql%E4%BA%8B%E5%8A%A1%E7%AF%87/</id>

@@ -3,59 +3,151 @@
     <id>http://example.com</id>
     <title>Hexo • Posts by &#34;java&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2022-06-28T08:09:11.000Z</updated>
+    <updated>2022-07-15T05:06:11.000Z</updated>
     <category term="spring" />
-    <category term="Java" />
     <category term="Mysql" />
-    <category term="mybatis" />
+    <category term="Java" />
     <category term="redis" />
+    <category term="mybatis" />
     <category term="hexo" />
     <entry>
-        <id>http://example.com/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+        <id>http://example.com/2022/07/15/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
         <title>java基础篇面试题</title>
-        <link rel="alternate" href="http://example.com/2022/06/28/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-        <content type="html">&lt;h2 id=&#34;1面向对象的特征&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1面向对象的特征&#34;&gt;#&lt;/a&gt; 1. 面向对象的特征&lt;/h2&gt;
+        <link rel="alternate" href="http://example.com/2022/07/15/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+        <content type="html">&lt;h1 id=&#34;java&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java&#34;&gt;#&lt;/a&gt; java&lt;/h1&gt;
+&lt;h2 id=&#34;基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基础&#34;&gt;#&lt;/a&gt; 基础&lt;/h2&gt;
+&lt;h3 id=&#34;面向对象的特征&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#面向对象的特征&#34;&gt;#&lt;/a&gt; 面向对象的特征&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;继承，封装，多态。&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;封装&lt;/strong&gt;：将对象的实现细节隐藏起来，然后通过公共方法暴露出该对象的功能。&lt;br&gt;
 &lt;strong&gt;继承&lt;/strong&gt;：实现软件复用。子类继承父类后可以直接或间接地使用父类的成员。&lt;br&gt;
 &lt;strong&gt;多态&lt;/strong&gt;：同一个行为具有不同的表现形式。&lt;/p&gt;
-&lt;h2 id=&#34;2java中覆盖和重载的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2java中覆盖和重载的区别&#34;&gt;#&lt;/a&gt; 2.JAVA 中覆盖和重载的区别&lt;/h2&gt;
+&lt;h3 id=&#34;java中覆盖和重载的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java中覆盖和重载的区别&#34;&gt;#&lt;/a&gt; JAVA 中覆盖和重载的区别&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;覆盖&lt;/strong&gt;：子类对父类方法的一种重写。返回值，方法名，参数列表必须相同。访问权限大于等于父类。抛出的异常要小于父类&lt;br&gt;
 &lt;strong&gt;重载&lt;/strong&gt;：在一个类中可以有多个重名的方法，根据 参数个数不同，参数类型不同，参数顺序不同  而构成重载。&lt;/p&gt;
-&lt;h2 id=&#34;3抽象类和接口的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3抽象类和接口的区别&#34;&gt;#&lt;/a&gt; 3. 抽象类和接口的区别&lt;/h2&gt;
+&lt;h3 id=&#34;抽象类和接口的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象类和接口的区别&#34;&gt;#&lt;/a&gt; 抽象类和接口的区别&lt;/h3&gt;
 &lt;p&gt;1 .  抽象类可以没有抽象方法，但接口中的方法必须是抽象的。&lt;br&gt;
 2 . 抽象类只能被一个类继承，而接口可以继承多个父接口。&lt;br&gt;
 3 . 抽象类可以有普通成员变量，但 接口中的变量必须被初始化，接口中只有常量没有变量。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/47fb42cf20bd4883a3e1222f2bf6eae8.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
-&lt;p&gt;怎么选择接口和抽象类：如果要创建一个不带任何方法和成员变量的基类则选择接口，否则选择抽象类。&lt;/p&gt;
-&lt;h2 id=&#34;4java中常用的包&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4java中常用的包&#34;&gt;#&lt;/a&gt; 4.Java 中常用的包&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/47fb42cf20bd4883a3e1222f2bf6eae8.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
+怎么选择接口和抽象类：如果要创建一个不带任何方法和成员变量的基类则选择接口，否则选择抽象类。&lt;/p&gt;
+&lt;h3 id=&#34;java中常用的包&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java中常用的包&#34;&gt;#&lt;/a&gt; Java 中常用的包&lt;/h3&gt;
 &lt;p&gt;Java.lang  java.util  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmEuaW8=&#34;&gt;java.io&lt;/span&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmEuaW8=&#34;&gt;java.io&lt;/span&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmEubmV0&#34;&gt;java.net&lt;/span&gt;  java.sql&lt;/p&gt;
-&lt;h2 id=&#34;5java-是值传递还是引用传递&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5java-是值传递还是引用传递&#34;&gt;#&lt;/a&gt; 5.Java 是值传递还是引用传递？&lt;/h2&gt;
+&lt;h3 id=&#34;java-是值传递还是引用传递&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java-是值传递还是引用传递&#34;&gt;#&lt;/a&gt; Java 是值传递还是引用传递？&lt;/h3&gt;
 &lt;p&gt;Java 是值传递的，当我们调用需要传参的函数时，传递过去的参数是它的副本而不是它本身&lt;br&gt;
 &lt;img data-src=&#34;https://img-blog.csdnimg.cn/b9f8506f3bcd4c168d64ef20c602da87.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;6static-关键字的含义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6static-关键字的含义&#34;&gt;#&lt;/a&gt; 6.static 关键字的含义？&lt;/h2&gt;
+&lt;h3 id=&#34;static-关键字的含义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#static-关键字的含义&#34;&gt;#&lt;/a&gt; static 关键字的含义？&lt;/h3&gt;
 &lt;p&gt;被 static 修饰的成员变量或方法可以直接通过类名调用。静态块在编译时被调用。&lt;/p&gt;
-&lt;h2 id=&#34;7i和i的不同之处&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7i和i的不同之处&#34;&gt;#&lt;/a&gt; 7.i&lt;ins&gt; 和&lt;/ins&gt; i 的不同之处？&lt;/h2&gt;
-&lt;p&gt;两者在运算之前都会把变量值 + 1.&lt;br&gt;
- 后置 ++ 会将变量赋值给一个临时变量，接下来对临时变量 + 1，然后用临时变量进行运算。&lt;/p&gt;
-&lt;h2 id=&#34;8truefalse-与-null是关键字吗&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8truefalse-与-null是关键字吗&#34;&gt;#&lt;/a&gt; 8.true，false 与 null 是关键字吗？&lt;/h2&gt;
+&lt;h3 id=&#34;i-和-i的不同之处&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#i-和-i的不同之处&#34;&gt;#&lt;/a&gt; i++ 和 ++i 的不同之处？&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;两者在运算之前都会把变量值 + 1。&lt;/li&gt;
+&lt;li&gt;后置 ++ 会将变量赋值给一个临时变量，接下来对临时变量 + 1，然后用临时变量进行运算。&lt;/li&gt;
+&lt;li&gt;b = &lt;ins&gt;a, 先自增，再赋值，b 值为 a 自增后的值。b = a&lt;/ins&gt; , 先赋值，再自增，b 值为 a 自增前的值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;string-stringbuffer-stringbuilder-的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#string-stringbuffer-stringbuilder-的区别&#34;&gt;#&lt;/a&gt; String , StringBuffer ,StringBuilder 的区别。&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;String&lt;/strong&gt; : 不可变，线程安全。用 final 修饰，相当于常量，所以线程安全。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;StringBuffer&lt;/strong&gt; : 可变，线程安全。加了同步锁，所以线程安全。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;StringBuilder&lt;/strong&gt; ：可变，线程不安全。未加同步锁，所以线程不安全。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;truefalse-与-null是关键字吗&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#truefalse-与-null是关键字吗&#34;&gt;#&lt;/a&gt; true，false 与 null 是关键字吗？&lt;/h3&gt;
 &lt;p&gt;true false 是布尔类型的字面常量，null 是引用类型的字面常量。&lt;/p&gt;
-&lt;h2 id=&#34;9java内存分布&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9java内存分布&#34;&gt;#&lt;/a&gt; 9.Java 内存分布&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/66b3b7ba39a94249957f043224b6bbd2.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
-&lt;strong&gt;栈&lt;/strong&gt;：一般存基础数据类型的值和对象以及基础数据类型的引用&lt;br&gt;
-&lt;strong&gt;堆&lt;/strong&gt;：存储创建好的对象和数组，jvm 只有一个堆，被所有的线程共享&lt;br&gt;
-&lt;strong&gt;方法区&lt;/strong&gt;：jvm 只有一个方法区，被所有线程共享。用于存储常量和存储类。&lt;/p&gt;
-&lt;h2 id=&#34;10java反射的实现过程和作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10java反射的实现过程和作用&#34;&gt;#&lt;/a&gt; 10.Java 反射的实现过程和作用&lt;/h2&gt;
+&lt;h3 id=&#34;java内存分布&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java内存分布&#34;&gt;#&lt;/a&gt; Java 内存分布&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/66b3b7ba39a94249957f043224b6bbd2.jpeg#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;栈&lt;/strong&gt;：一般存基础数据类型的值和对象以及基础数据类型的引用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;堆&lt;/strong&gt;：存储创建好的对象和数组，jvm 只有一个堆，被所有的线程共享。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方法区&lt;/strong&gt;：jvm 只有一个方法区，被所有线程共享。用于存储常量和存储类。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;equlse-和-的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#equlse-和-的区别&#34;&gt;#&lt;/a&gt; equlse () 和 == 的区别&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;==&lt;/strong&gt; 对于基本数据类型，比较的是值。对于引用数据，比较的是对象的地址。不管是基本数据类型还是引用数据类型 ，&lt;strong&gt;==&lt;/strong&gt; 本质上还是比较值，只是引用数据类型存放的是地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;equlse&lt;/strong&gt; () 存在于&lt;strong&gt; object&lt;/strong&gt; 类中，&lt;strong&gt;object&lt;/strong&gt; 是所有类的直接或间接父类。对象未重写&lt;strong&gt; equlse&lt;/strong&gt; () ，等价于 &lt;strong&gt;==&lt;/strong&gt;。对象重写了 &lt;strong&gt;equlse&lt;/strong&gt; () ，比较的是对象的属性是否相等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;java反射的实现过程和作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java反射的实现过程和作用&#34;&gt;#&lt;/a&gt; Java 反射的实现过程和作用&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;实现过程&lt;/strong&gt;：Java 语言编译完之后会生成一个.class 文件，反射就是通过字节码找到一个类和 类中的方法和属性等。&lt;br&gt;
 &lt;strong&gt;作用&lt;/strong&gt;：反射机制就是指程序运行过程中可以获取自身的信息。在 Java 中 只要知道类的名字就可以通过反射机制找到类的所有信息。&lt;/p&gt;
-&lt;h2 id=&#34;11请问error和exception有什么区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11请问error和exception有什么区别&#34;&gt;#&lt;/a&gt; 11. 请问 error 和 exception 有什么区别？&lt;/h2&gt;
+&lt;h3 id=&#34;请问error和exception有什么区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#请问error和exception有什么区别&#34;&gt;#&lt;/a&gt; 请问 error 和 exception 有什么区别？&lt;/h3&gt;
 &lt;p&gt;error 表示恢复不是不可能但十分困难的一种严重问题，例如，内存溢出。&lt;br&gt;
 exception 表示一种设计或实现问题。表示，如果程序正常运行，就从不会发生的情况。&lt;/p&gt;
-&lt;h2 id=&#34;12ajax中get-和-post的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12ajax中get-和-post的区别&#34;&gt;#&lt;/a&gt; 12.AJAX 中 get 和 post 的区别。&lt;/h2&gt;
+&lt;h3 id=&#34;ajax中get-和-post的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ajax中get-和-post的区别&#34;&gt;#&lt;/a&gt; AJAX 中 get 和 post 的区别。&lt;/h3&gt;
 &lt;p&gt;get 传输 把数据添加到 url 中发送。get 传输简单数据，数据大小在 1kb 以下。get 传输的数据会被浏览器缓存下来。&lt;br&gt;
 post 传输 把各表单数据及元素作为 HTML 的消息实体内容传递给 web 服务器。post 没有长度限制。&lt;/p&gt;
+&lt;h2 id=&#34;集合容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#集合容器&#34;&gt;#&lt;/a&gt; 集合容器&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;集合中不能直接存储数据类型和对象，存的是它们的内存地址。集合在 Java 中本身就是一个容器，是一个对象。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/3c7c28ad47e84ae59225b98b868b0a3a.png#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;list&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#list&#34;&gt;#&lt;/a&gt; List&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有序可重复，查询慢，增删快。集合中每个元素都有其对应的顺序索引。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;arraylist&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#arraylist&#34;&gt;#&lt;/a&gt; ArrayList&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;有序可重复，查询慢，增删快，线程不安全，有序。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;底层是一个动态数组，有一个初始的容量值为 10. 当内存快溢出时就会进行扩容操作。若已知要添加数据的数量可先指定容量，可减少频繁扩容而带来的内存消耗。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;linkedlist&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linkedlist&#34;&gt;#&lt;/a&gt; LinkedList&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;查询慢，增删快，线程不安全，可存储重复数据。&lt;/li&gt;
+&lt;li&gt;底层是双向链表。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;vectro&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vectro&#34;&gt;#&lt;/a&gt; Vectro&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;查询快，增删慢，线程安全，可存储重复数据。&lt;/li&gt;
+&lt;li&gt;底层是数组。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;set&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#set&#34;&gt;#&lt;/a&gt; Set&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;无序，不可重复，线程不安全，查询快，增删慢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;hashset&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hashset&#34;&gt;#&lt;/a&gt; HashSet&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;无序，不可重复，线程不安全。&lt;/li&gt;
+&lt;li&gt;底层数据采用哈希表，可添加 null 元素。&lt;/li&gt;
+&lt;li&gt;元素的唯一性是由是否重写 hashCode 和 equals 来实现的，若没重写这两个函数，无法保证元素的唯一性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;linkedhashset&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linkedhashset&#34;&gt;#&lt;/a&gt; LinkedHashSet&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;有序，不可重复。&lt;/li&gt;
+&lt;li&gt;底层采用链表和哈希表共同实现，链表保证元素的顺序和存储顺序一致，哈希表保证了数据的唯一，线程不安全&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;treeset&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#treeset&#34;&gt;#&lt;/a&gt; TreeSet&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;底层采用二叉树，元素唯一且排好序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;map&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#map&#34;&gt;#&lt;/a&gt; Map&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;map 是由键值对的形式存在的，键不可以重复，但值可以重复。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;hashmap&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hashmap&#34;&gt;#&lt;/a&gt; HashMap&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;key&lt;/strong&gt; 不可重复，&lt;strong&gt;value&lt;/strong&gt; 可重复。&lt;strong&gt;key&lt;/strong&gt; 可以为&lt;strong&gt; null&lt;/strong&gt;，只允许有一个，&lt;strong&gt;value&lt;/strong&gt; 可以存多个&lt;strong&gt; null&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;并发编程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#并发编程&#34;&gt;#&lt;/a&gt; 并发编程&lt;/h2&gt;
+&lt;h3 id=&#34;什么是进程和线程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是进程和线程&#34;&gt;#&lt;/a&gt; 什么是进程和线程&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;进程&lt;/strong&gt;：进程是程序的一次创建、运行、销毁的过程。&lt;br&gt;
+&lt;strong&gt;线程&lt;/strong&gt;：一个进程可以有多个线程，他们共享这个进程中的资源。在&lt;strong&gt; Java&lt;/strong&gt; 中，所有线程共享&lt;strong&gt;堆&lt;/strong&gt;和&lt;strong&gt;方法区&lt;/strong&gt;的资源。&lt;/p&gt;
+&lt;h3 id=&#34;线程的生命周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#线程的生命周期&#34;&gt;#&lt;/a&gt; 线程的生命周期&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/189aa14e0bfb45f28df9959129d099cb.png#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新建：&lt;/li&gt;
+&lt;li&gt;就绪：&lt;/li&gt;
+&lt;li&gt;运行：&lt;/li&gt;
+&lt;li&gt;阻塞：&lt;/li&gt;
+&lt;li&gt;死亡：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;java创建线程的三种方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java创建线程的三种方法&#34;&gt;#&lt;/a&gt; Java 创建线程的三种方法&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;继承 Thread 类，重写 run () 方法。&lt;/li&gt;
+&lt;li&gt;实现 Runnable 接口，重写 run () 方法。&lt;/li&gt;
+&lt;li&gt;实现 Callable 接口，重写 run () 方法。&lt;/li&gt;
+&lt;/ol&gt;
 </content>
         <category term="Java" />
-        <updated>2022-06-28T08:09:11.000Z</updated>
+        <updated>2022-07-15T05:06:11.000Z</updated>
     </entry>
 </feed>
