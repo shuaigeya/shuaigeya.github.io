@@ -7,12 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Wed, 29 Jun 2022 10:52:07 +0800</pubDate>
         <lastBuildDate>Wed, 29 Jun 2022 10:52:07 +0800</lastBuildDate>
+        <category>mybatis</category>
         <category>Mysql</category>
-        <category>spring</category>
         <category>Java</category>
+        <category>spring</category>
         <category>redis</category>
         <category>hexo</category>
-        <category>mybatis</category>
         <item>
             <guid isPermalink="true">http://example.com/2022/06/29/shoka%20%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
             <title>shoka 食用手册</title>

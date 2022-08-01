@@ -7,12 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Fri, 15 Jul 2022 13:06:11 +0800</pubDate>
         <lastBuildDate>Fri, 15 Jul 2022 13:06:11 +0800</lastBuildDate>
+        <category>mybatis</category>
         <category>Mysql</category>
-        <category>spring</category>
         <category>Java</category>
+        <category>spring</category>
         <category>redis</category>
         <category>hexo</category>
-        <category>mybatis</category>
         <item>
             <guid isPermalink="true">http://example.com/2022/07/15/java%E5%9F%BA%E7%A1%80%E7%AF%87%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
             <title>java基础篇面试题</title>
